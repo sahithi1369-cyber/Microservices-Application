@@ -1,0 +1,32 @@
+{
+  "realm": "microservices",
+  "enabled": true,
+  "registrationAllowed": false,
+  "clients": [
+    {
+      "clientId": "microservices-client",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "redirectUris": ["*"],
+      "webOrigins": ["*"]
+    }
+  ],
+  "users": [
+    {
+      "username": "student",
+      "enabled": true,
+      "email": "student@example.com",
+      "firstName": "Student",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "student123",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}
